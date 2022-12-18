@@ -42,6 +42,7 @@ jobs:
       - name: spread image
         run: |
          cp *.png Delopy.png
+         ls
          pwd
          git clone https://github.com/GDWGH/rdthimg-front.git
          mkdir temp
