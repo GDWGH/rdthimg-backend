@@ -44,7 +44,7 @@ jobs:
          cp *.png Delopy.png
          ls
          pwd
-         git clone https://github.com/GDWGH/rdthimg-front.git
+         git clone https://guihongwong:"$passwd"@github.com/GDWGH/rdthimg-front.git
          mkdir temp
          cd rdthimg-front
          cp index.html /home/runner/work/rdthimg-backend/rdthimg-backend/temp/
