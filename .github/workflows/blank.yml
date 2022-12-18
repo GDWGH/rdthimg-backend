@@ -33,3 +33,4 @@ jobs:
       - name: Download image
         run: |
          cp $Date.png Delopy.png
+         pwd
