@@ -20,6 +20,10 @@ jobs:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
+    env: 
+      passwd: ${{ secrets.PASSWD }}
+      
+      
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
@@ -30,6 +34,11 @@ jobs:
         run: |
           Date=$(date "+%Y%m%d")
           curl -H "Referer: https://github.com/GDWGH/rdthimg-backend" --user-agent "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5026.0 Safari/537.36 Edg/103.0.1254.0" https://rdthimg.marisa.ml/touhou/random -L -o $Date.png
+      - name: spread image
+        run: |
+         git config --global user.email "sakuya@sakuya.ga"
+         git config --global user.name "guihongwong"
+         git config --global user.password $passwd
       - name: spread image
         run: |
          cp *.png Delopy.png
