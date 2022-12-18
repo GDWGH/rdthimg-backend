@@ -32,5 +32,5 @@ jobs:
           curl -H "Referer: https://github.com/GDWGH/rdthimg-backend" --user-agent "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5026.0 Safari/537.36 Edg/103.0.1254.0" https://rdthimg.marisa.ml/touhou/random -L -o $Date.png
       - name: Download image
         run: |
-         cp "$Date".png Delopy.png
+         cp $Date.png Delopy.png
          pwd
