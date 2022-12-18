@@ -36,3 +36,12 @@ jobs:
          pwd
          cd 
          pwd
+         mkdir gui %% cd gui
+         git clone https://github.com/GDWGH/rdthimg-front.git
+         mkdir temp
+         cd rdthimg-front
+         cp index.html /home/runner/gui/temp/
+         cp -r .github /home/runner/gui/temp/
+         git rm * -r
+         git commit -m "Ze☆"
+         cp /home/runner/gui/temp/index.html %% cp -r /home/runner/gui/temp/.github
