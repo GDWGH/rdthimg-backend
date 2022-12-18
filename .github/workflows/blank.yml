@@ -36,15 +36,15 @@ jobs:
          pwd
          cd 
          pwd
-         mkdir gui %% cd gui
+         mkdir guitest %% cd guitest
          git clone https://github.com/GDWGH/rdthimg-front.git
          mkdir temp
          cd rdthimg-front
-         cp index.html /home/runner/gui/temp/
-         cp -r .github /home/runner/gui/temp/
+         cp index.html /home/runner/guitest/temp/
+         cp -r .github /home/runner/guitest/temp/
          git rm * -r
          git commit -m "Ze☆"
-         cp /home/runner/gui/temp/index.html 
+         cp /home/runner/guitest/temp/index.html /home/runner/guitest/rdthimg-front/
          git add .
          git commit -m "Ze☆"
          git branch -M main
