@@ -52,6 +52,7 @@ jobs:
          git rm * -r
          git commit -m "Ze☆"
          cp /home/runner/work/rdthimg-backend/rdthimg-backend/temp/index.html /home/runner/work/rdthimg-backend/rdthimg-backend/rdthimg-front/
+         cp /home/runner/work/rdthimg-backend/rdthimg-backend/*.png /home/runner/work/rdthimg-backend/rdthimg-backend/rdthimg-front/
          git add .
          git commit -m "Ze☆"
          git branch -M main
