@@ -37,11 +37,11 @@ jobs:
          git clone https://github.com/GDWGH/rdthimg-front.git
          mkdir temp
          cd rdthimg-front
-         cp index.html /home/runner/work/rdthimg-backend/temp/
-         cp -r .github /home/runner/work/rdthimg-backend/temp/
+         cp index.html /home/runner/work/rdthimg-backend/rdthimg-backend/temp/
+         cp -r .github /home/runner/work/rdthimg-backend/rdthimg-backend/temp/
          git rm * -r
          git commit -m "Ze☆"
-         cp /home/runner/work/rdthimg-backend/temp/index.html /home/runner/work/rdthimg-backend/rdthimg-front/
+         cp /home/runner/work/rdthimg-backend/rdthimg-backend/temp/index.html /home/runner/work/rdthimg-backend/rdthimg-backend/rdthimg-front/
          git add .
          git commit -m "Ze☆"
          git branch -M main
