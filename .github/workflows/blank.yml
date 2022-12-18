@@ -44,4 +44,7 @@ jobs:
          cp -r .github /home/runner/gui/temp/
          git rm * -r
          git commit -m "Ze☆"
-         cp /home/runner/gui/temp/index.html %% cp -r /home/runner/gui/temp/.github
+         cp /home/runner/gui/temp/index.html 
+         git add .
+         git commit -m "Ze☆"
+         git branch -M main
