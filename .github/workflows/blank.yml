@@ -34,7 +34,7 @@ jobs:
         run: |
           Date=$(date "+%Y%m%d")
           curl -H "Referer: https://github.com/GDWGH/rdthimg-backend" --user-agent "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5026.0 Safari/537.36 Edg/103.0.1254.0" https://rdthimg.marisa.ml/touhou/random -L -o $Date.png
-      - name: spread image
+      - name: set git env
         run: |
          git config --global user.email "sakuya@sakuya.ga"
          git config --global user.name "guihongwong"
@@ -56,3 +56,4 @@ jobs:
          git add .
          git commit -m "Ze☆"
          git branch -M main
+         git push -u origin main
