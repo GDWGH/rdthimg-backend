@@ -45,7 +45,7 @@ jobs:
       - name: Download image
         run: |
           Date=$(date "+%Y%m%d")
-          ./curl_edge101 -H "Referer: https://github.com/GDWGH/rdthimg-backend" http://rdthimg.22web.org/touhou/random/ -L -o $Date.png
+          ./curl_edge101 http://rdthimg.22web.org/touhou/random/ -L -o $Date.png
       - name: set git env
         run: |
          git config --global user.email "sakuya@sakuya.ga"
