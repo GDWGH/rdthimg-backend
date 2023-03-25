@@ -37,7 +37,7 @@ jobs:
       - name: Download image
         run: |
           Date=$(date "+%Y%m%d")
-          curl -H "Referer: https://github.com/GDWGH/rdthimg-backend" --user-agent "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5026.0 Safari/537.36 Edg/103.0.1254.0" https://od.marisa.ml/personal/mailer_marisa_ml/_layouts/52/download.aspx?share=Eb23Ckan0FVNugQ6luyUZKkBIKuu0_XVg9Fckmtrf-w0kw -L -o $Date.png
+          curl -H "Referer: https://github.com/GDWGH/rdthimg-backend" --user-agent "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5026.0 Safari/537.36 Edg/103.0.1254.0" http://rdthimg.22web.org/touhou/random/ -L -o $Date.png
       - name: set git env
         run: |
          git config --global user.email "sakuya@sakuya.ga"
