@@ -39,7 +39,7 @@ jobs:
          wget https://github.com/lwthiker/curl-impersonate/releases/download/v0.5.4/curl-impersonate-v0.5.4.x86_64-linux-gnu.tar.gz
          tar -zxvf curl-impersonate-v0.5.4.x86_64-linux-gnu.tar.gz
          pwd
-         cd curl-impersonate-v0.5.4.x86_64-linux-gnu
+         ls
         
       - name: Download image
         run: |
