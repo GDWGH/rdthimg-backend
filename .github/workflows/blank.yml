@@ -40,11 +40,12 @@ jobs:
          tar -zxvf curl-impersonate-v0.5.4.x86_64-linux-gnu.tar.gz
          pwd
          ls
+         chmod +x curl_edge101
         
       - name: Download image
         run: |
           Date=$(date "+%Y%m%d")
-          curl -H "Referer: https://github.com/GDWGH/rdthimg-backend" --user-agent "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5026.0 Safari/537.36 Edg/103.0.1254.0" http://rdthimg.22web.org/touhou/random/ -L -o $Date.png
+          ./curl_edge101 -H "Referer: https://github.com/GDWGH/rdthimg-backend" http://rdthimg.22web.org/touhou/random/ -L -o $Date.png
       - name: set git env
         run: |
          git config --global user.email "sakuya@sakuya.ga"
