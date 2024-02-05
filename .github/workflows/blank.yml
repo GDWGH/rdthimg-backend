@@ -45,7 +45,7 @@ jobs:
       - name: Download image
         run: |
           Date=$(date "+%Y%m%d")
-          ./curl_edge101 https://file.marisa.ml/rdthimg/ -L -o $Date.png
+          ./curl_edge101 https://rdpic.marisa.ml/1.png -L -o $Date.png
       - name: set git env
         run: |
          git config --global user.email "sakuya@sakuya.ga"
