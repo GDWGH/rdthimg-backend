@@ -40,7 +40,7 @@ jobs:
          tar -zxvf curl-impersonate-v0.6.1.x86_64-linux-gnu.tar.gz
          pwd
          ls
-         chmod +x curl_edge101
+         chmod +x curl_edge99
         
       - name: Download image
         run: |
