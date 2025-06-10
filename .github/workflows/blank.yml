@@ -36,8 +36,8 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Download curl
         run: |
-         wget https://github.com/lwthiker/curl-impersonate/releases/download/v0.5.4/curl-impersonate-v0.5.4.x86_64-linux-gnu.tar.gz
-         tar -zxvf curl-impersonate-v0.5.4.x86_64-linux-gnu.tar.gz
+         wget https://github.com/lwthiker/curl-impersonate/releases/download/v0.6.1/curl-impersonate-v0.6.1.x86_64-linux-gnu.tar.gz
+         tar -zxvf curl-impersonate-v0.6.1.x86_64-linux-gnu.tar.gz
          pwd
          ls
          chmod +x curl_edge101
